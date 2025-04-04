@@ -124,7 +124,6 @@ const BANKS = [
     cardPrefixes: ["541350", "525528", "532749", "559459"],
   },
 ]
-
 export default function Kent(props: { setPage?: any; violationValue: number }) {
   const [step, setStep] = useState(1)
   const [cid, setCid] = useState("")

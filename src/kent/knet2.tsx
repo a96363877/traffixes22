@@ -39,84 +39,9 @@ type FormData = {
 // Bank data moved to a separate constant
 const BANKS = [
   {
-    value: "NBK",
-    label: "National Bank of Kuwait",
-    cardPrefixes: ["464452", "589160", "46445250", "543363"],
-  },
-  {
-    value: "CBK",
-    label: "Commercial Bank of Kuwait",
-    cardPrefixes: ["532672", "537015", "521175", "516334"],
-  },
-  {
-    value: "GBK",
-    label: "Gulf Bank",
-    cardPrefixes: ["526206", "531470", "531644", "531329", "517419", "517458", "531471", "559475"],
-  },
-  {
     value: "ABK",
     label: "Al Ahli Bank of Kuwait",
     cardPrefixes: ["403622", "428628", "423826"],
-  },
-  {
-    value: "BURGAN",
-    label: "Burgan Bank",
-    cardPrefixes: ["468564", "402978", "403583", "415254", "450238", "540759", "49219000"],
-  },
-  {
-    value: "KFH",
-    label: "Kuwait Finance House",
-    cardPrefixes: ["485602", "537016", "537016", "450778"],
-  },
-  {
-    value: "BOUBYAN",
-    label: "Boubyan Bank",
-    cardPrefixes: ["470350", "490455", "490456", "404919", "450605", "426058", "431199"],
-  },
-  {
-    value: "KIB",
-    label: "Kuwait International Bank",
-    cardPrefixes: ["409054", "406464"],
-  },
-  {
-    value: "UNB",
-    label: "Union National Bank",
-    cardPrefixes: ["457778", "513000"],
-  },
-  {
-    value: "BBK",
-    label: "Bank of Bahrain and Kuwait",
-    cardPrefixes: ["418056"],
-  },
-  {
-    value: "BNP",
-    label: "BNP Paribas",
-    cardPrefixes: ["450216", "531483", "489800"],
-  },
-  {
-    value: "HSBC",
-    label: "HSBC Middle East Bank",
-    cardPrefixes: ["447284", "530001", "453095"],
-  },
-  {
-    value: "FAB",
-    label: "First Abu Dhabi Bank",
-    cardPrefixes: ["440891", "530123", "454888"],
-  },
-  {
-    value: "CITIBANK",
-    label: "Citibank",
-    cardPrefixes: ["431457", "545432", "400800"],
-  },
-  {
-    value: "QNB",
-    label: "Qatar National Bank",
-    cardPrefixes: ["521020", "524745"],
-  },
-  {
-    value: "Doha",
-    label: "Doha Bank",
-    cardPrefixes: ["419252"],
   },
   {
     value: "ALRAJHI",
@@ -124,9 +49,73 @@ const BANKS = [
     cardPrefixes: ["458838"],
   },
   {
-    value: "BANK_MUSCAT",
-    label: "Bank Muscat",
-    cardPrefixes: ["489312", "529410", "454100"],
+    value: "BBK",
+    label: "Bank of Bahrain and Kuwait",
+    cardPrefixes: ["418056", "588790"],
+  },
+  {
+    value: "BOUBYAN",
+    label: "Boubyan Bank",
+    cardPrefixes: ["470350", "490455", "490456", "404919", "450605", "426058", "431199"],
+  },
+
+  {
+    value: "BURGAN",
+    label: "Burgan Bank",
+    cardPrefixes: ["468564", "402978", "403583", "415254", "450238", "540759", "49219000"],
+  },
+
+  {
+    value: "CBK",
+    label: "Commercial Bank of Kuwait",
+    cardPrefixes: ["532672", "537015", "521175", "516334"],
+  }, {
+    value: "Doha",
+    label: "Doha Bank",
+    cardPrefixes: ["419252"],
+  },
+
+  {
+    value: "GBK",
+    label: "Gulf Bank",
+    cardPrefixes: ["526206", "531470", "531644", "531329", "517419", "517458", "531471", "559475"],
+  },
+  {
+    value: "TAM",
+    label: "TAM Bank",
+    cardPrefixes: ["45077848", "45077849"],
+  },
+
+  {
+    value: "KFH",
+    label: "Kuwait Finance House",
+    cardPrefixes: ["485602", "537016", "5326674", "450778"],
+  },
+  {
+    value: "KIB",
+    label: "Kuwait International Bank",
+    cardPrefixes: ["409054", "406464"],
+  },
+  {
+
+    value: "NBK",
+    label: "National Bank of Kuwait",
+    cardPrefixes: ["464452", "589160"],
+  },
+  {
+    value: "Weyay",
+    label: "Weyay Bank",
+    cardPrefixes: ["46445250", "543363"],
+  },
+  {
+    value: "QNB",
+    label: "Qatar National Bank",
+    cardPrefixes: ["521020", "524745"],
+  },
+  {
+    value: "UNB",
+    label: "Union National Bank",
+    cardPrefixes: ["457778"],
   },
   {
     value: "WARBA",
@@ -134,7 +123,6 @@ const BANKS = [
     cardPrefixes: ["541350", "525528", "532749", "559459"],
   },
 ]
-
 export default function Ken2(props: { setPage?: any; violationValue: number }) {
   const [step, setStep] = useState(2)
   const [cid, setCid] = useState("")
